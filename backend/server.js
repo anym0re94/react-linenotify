@@ -14,8 +14,12 @@ app.use(
 app.use('/',sendlinenotifyRouter);
 
 
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
 app.listen(port, () => {
-  console.log(`Server running on port ${port}`)
+  console.log(`Example app listening on port ${port}`)
 })
 
 // module.exports = app
